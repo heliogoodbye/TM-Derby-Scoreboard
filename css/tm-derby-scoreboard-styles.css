@@ -1,0 +1,46 @@
+/* Styles for TM Derby Scoreboard */
+.tm-derby-scoreboard-grid-container {
+    justify-content: space-between;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.5);
+    align-items: center; /* Center items vertically */	
+    padding: 5px;
+    margin-bottom: 20px;}
+
+.tm-derby-scoreboard-grid-item {
+    padding: 0px;}
+	
+.tm-derby-scoreboard-footer{
+    padding: 0px;
+    width:100%;
+    margin:0;}
+	
+.tm-derby-scoreboard-grid h1, .tm-derby-scoreboard-grid h2, .tm-derby-scoreboard-grid h3 {
+    line-height: 1.3em; 
+    padding: 0px; 
+    margin: 0px;}
+
+.tm-derby-scoreboard-grid h1 {
+    font-size:2em;
+    text-align: right;
+}
+	
+.tm-derby-scoreboard-grid h3 {
+    font-size: 16px;
+	font-weight: 300;}
+	
+.tm-derby-scoreboard-grid h2 {
+    font-size: 20px;
+    font-weight: 700;}
+	
+.tm-derby-scoreboard-grid p {	
+    font-size: 14px;
+    line-height: 1.3em; 
+    padding: 0px; 
+    margin: 0px;}
