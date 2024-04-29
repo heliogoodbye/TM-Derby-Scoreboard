@@ -22,7 +22,7 @@ TM Derby Scoreboard provides an efficient solution for roller derby enthusiasts,
 To effectively use the "TM Derby Scoreboard" plugin, follow these step-by-step instructions:
 
 1. Installation:
-- Download the "TM Derby Scoreboard" plugin from a reliable source or the WordPress plugin repository.
+- Download the "TM Derby Scoreboard" plugin.
 
 - Log in to your WordPress admin dashboard and navigate to `Plugins > Add New`. Click on the "Upload Plugin" button, choose the plugin ZIP file, and click "Install Now."
 
