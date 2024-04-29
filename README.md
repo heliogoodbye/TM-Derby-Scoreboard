@@ -11,7 +11,7 @@ Key features of the plugin include:
 - **Shortcode Integration:** Users can utilize the [derby_scores] shortcode to display game scores on any page or post of their WordPress website. The shortcode offers various attributes to customize the output, including the ability to specify the number of game scores to display, filter by category, specify a particular year, and offset entries.
 - **Styling:** The plugin includes a CSS stylesheet, "tm-derby-scoreboard-styles.css," for styling the output of the game scores. Users can enqueue this stylesheet to ensure consistent styling with their WordPress theme.
 - **Flexible Display Options:** The plugin offers flexibility in displaying game scores, allowing users to choose between a list or grid layout. Additionally, users can display all games from a specific year or apply an offset to skip a certain number of entries.
-- **XML Export:** The plugin has the functionality to export the game scores as an XML document. When the `tm_derby_scoreboard' parameter is set to 'xml' in the URL (example `http://[your site address]/?tm_derby_scoreboard=xml`), the plugin generates an XML document containing the game information.
+- **XML Export:** The plugin has the functionality to export the game scores as an XML document. When the `tm_derby_scoreboard` parameter is set to 'xml' in the URL (example `http://[your site address]/?tm_derby_scoreboard=xml`), the plugin generates an XML document containing the game information.
 
 TM Derby Scoreboard provides an efficient solution for roller derby enthusiasts, leagues, or websites to manage and showcase their game scores in a structured and customizable manner within their WordPress-powered websites.
 
