@@ -48,7 +48,7 @@ To effectively use the "TM Derby Scoreboard" plugin, follow these step-by-step i
 - If desired, edit the plugin's stylesheet `css/tm-derby-scoreboard-styles.css` to ensure consistent styling with your WordPress theme.
 
 5. Save and Publish:
-- **Preview and Publish**: Preview your page or post to ensure the game scores are displaying correctly. Once satisfied, publish your changes to make the game scores live on your website.
+- Preview your page or post to ensure the game scores are displaying correctly. Once satisfied, publish your changes to make the game scores live on your website.
 
 By following these instructions, you'll be able to effectively utilize the "TM Derby Scoreboard" plugin to manage and display roller derby game scores on your WordPress website.
 
