@@ -17,7 +17,7 @@ TM Derby Scoreboard provides an efficient solution for roller derby enthusiasts,
 
 ---
 
-### How to Use TM Derby Scoreboard
+### How to use TM Derby Scoreboard
 
 To effectively use the "TM Derby Scoreboard" plugin, follow these step-by-step instructions:
 
