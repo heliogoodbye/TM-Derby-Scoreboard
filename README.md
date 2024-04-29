@@ -37,7 +37,7 @@ To effectively use the "TM Derby Scoreboard" plugin, follow these step-by-step i
 - To display game scores on any page or post, use the `[derby_scores]` shortcode. You can place this shortcode in the WordPress editor of the desired page or post.
 
 - Shortcode Attributes:
-   - **`display`**: Specify how the information is displayed; `grid` or `list`. Default is set to display a grid.
+   - **`display`**: Specify how the information is displayed; in a `grid` or a `list`. Default is set to display a grid.
    - **`count`**: Specify the number of game scores to display. Default is set to display all (-1).
    - **`year`**: Display game scores from a specific year (optional).
    - **`offset`**: Skip a certain number of entries before displaying the rest (optional).
