@@ -22,33 +22,28 @@ TM Derby Scoreboard provides an efficient solution for roller derby enthusiasts,
 To effectively use the "TM Derby Scoreboard" plugin, follow these step-by-step instructions:
 
 1. Installation:
-- Download the "TM Derby Scoreboard" plugin.
-
-- Log in to your WordPress admin dashboard and navigate to `Plugins > Add New`. Click on the "Upload Plugin" button, choose the plugin ZIP file, and click "Install Now."
-
-- After the installation is complete, activate the plugin from the Plugins page in your WordPress admin dashboard.
+   - Download the "TM Derby Scoreboard" plugin.
+   - Log in to your WordPress admin dashboard and navigate to `Plugins > Add New`. Click on the "Upload Plugin" button, choose the plugin ZIP file, and click "Install Now."
+   - After the installation is complete, activate the plugin from the Plugins page in your WordPress admin dashboard.
 
 2. Adding Game Scores:
-- In the WordPress admin dashboard, you'll find a new menu item called "Game Scores." Click on it to add new game scores.
+   - In the WordPress admin dashboard, you'll find a new menu item called "Game Scores." Click on it to add new game scores.
+   - Click on "Add New" to create a new game score entry. Fill in the required fields such as the date of the game, venue, location, team names, and their respective scores.
 
-- Click on "Add New" to create a new game score entry. Fill in the required fields such as the date of the game, venue, location, team names, and their respective scores.
-
-3. Displaying Game Scores:
-- To display game scores on any page or post, use the `[derby_scores]` shortcode. You can place this shortcode in the WordPress editor of the desired page or post.
-
-- Shortcode Attributes:
-   - **`display`**: Specify how the information is displayed; in a `grid` or a `list`. Default is set to display a grid.
-   - **`count`**: Specify the number of game scores to display. Default is set to display all (-1).
-   - **`year`**: Display game scores from a specific year (optional).
-   - **`offset`**: Skip a certain number of entries before displaying the rest (optional).
-
-   Example: `[derby_scores count="5" category="featured" year="2024" offset="2"]`
+4. Displaying Game Scores:
+   - To display game scores on any page or post, use the `[derby_scores]` shortcode. You can place this shortcode in the WordPress editor of the desired page or post.
+   - Shortcode Attributes:
+      - **`display`**: Specify how the information is displayed; in a `grid` or a `list`. Default is set to display a grid.
+      - **`count`**: Specify the number of game scores to display. Default is set to display all (-1).
+      - **`year`**: Display game scores from a specific year (optional).
+      - **`offset`**: Skip a certain number of entries before displaying the rest (optional).
+      - Example: `[derby_scores count="5" year="2024" offset="2"]`
 
 4. Customization:
-- If desired, edit the plugin's stylesheet `css/tm-derby-scoreboard-styles.css` to ensure consistent styling with your WordPress theme.
+      - If desired, edit the plugin's stylesheet `css/tm-derby-scoreboard-styles.css` to ensure consistent styling with your WordPress theme.
 
 5. Save and Publish:
-- Preview your page or post to ensure the game scores are displaying correctly. Once satisfied, publish your changes to make the game scores live on your website.
+      - Preview your page or post to ensure the game scores are displaying correctly. Once satisfied, publish your changes to make the game scores live on your website.
 
 By following these instructions, you'll be able to effectively utilize the "TM Derby Scoreboard" plugin to manage and display roller derby game scores on your WordPress website.
 
