@@ -3,11 +3,11 @@
 Plugin Name: TM Derby Scoreboard
 Description: Displays roller derby game scores.
 Plugin URI: https://thinmint333.com/wp-plugins/tm-derby-scoreboard/
-Version: 1.6
+Version: 1.7
 Author: Thin Mint
 Author URI: https://thinmint333.com/
-License: GPL-2.0
-License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+License: GPL-3.0+
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 */
 
 // Register custom post type
@@ -65,42 +65,87 @@ function tm_derby_scoreboard_meta_callback( $post ) {
     $title = get_post_meta( $post->ID, 'game_title', true );
     $venue = get_post_meta( $post->ID, 'venue', true );
     $location = get_post_meta( $post->ID, 'location', true );
-    $team1 = get_post_meta( $post->ID, 'team_1', true );
+    $team1fullname = get_post_meta( $post->ID, 'team_1_fullname', true );
+	$team1 = get_post_meta( $post->ID, 'team_1', true );
     $team1name2 = get_post_meta( $post->ID, 'team_1_name2', true );
     $score1 = get_post_meta( $post->ID, 'score_1', true );
+    $team2fullname = get_post_meta( $post->ID, 'team_2_fullname', true );
     $team2 = get_post_meta( $post->ID, 'team_2', true );
     $team2name2 = get_post_meta( $post->ID, 'team_2_name2', true );
     $score2 = get_post_meta( $post->ID, 'score_2', true );
-
-    echo '<label for="game_date">Date of Game:</label>&nbsp;';
-    echo '<input type="date" id="game_date" name="game_date" value="' . esc_attr( $date ) . '"><br>';
-
-    echo '<label for="venue">Game Title:</label>&nbsp;';
-    echo '<input type="text" id="game_title" name="game_title" value="' . esc_attr( $title ) . '"><br>';
-
-    echo '<label for="venue">Venue:</label>&nbsp;';
-    echo '<input type="text" id="venue" name="venue" value="' . esc_attr( $venue ) . '"><br>';
-
-    echo '<label for="location">Location:</label>&nbsp;';
-    echo '<input type="text" id="location" name="location" value="' . esc_attr( $location ) . '"><br>';
-
-    echo '<label for="team_1">Team 1:</label>&nbsp;';
-    echo '<input type="text" id="team_1" name="team_1" value="' . esc_attr( $team1 ) . '"><br>';
-
-    echo '<label for="team_1_name2">Team 1 Name 2:</label>&nbsp;';
-    echo '<input type="text" id="team_1_name2" name="team_1_name2" value="' . esc_attr( $team1name2 ) . '"><br>';
-
-    echo '<label for="score_1">Score 1:</label>&nbsp;';
-    echo '<input type="number" id="score_1" name="score_1" value="' . esc_attr( $score1 ) . '"><br>';
-
-    echo '<label for="team_2">Team 2:</label>&nbsp;';
-    echo '<input type="text" id="team_2" name="team_2" value="' . esc_attr( $team2 ) . '"><br>';
-
-    echo '<label for="team_2_name2">Team 2 Name 2:</label>&nbsp;';
-    echo '<input type="text" id="team_2_name2" name="team_2_name2" value="' . esc_attr( $team2name2 ) . '"><br>';
-
-    echo '<label for="score_2">Score 2:</label>&nbsp;';
-    echo '<input type="number" id="score_2" name="score_2" value="' . esc_attr( $score2 ) . '"><br>';
+   ?>
+	<h3>
+		Game Details
+	</h3>
+    <table class="custom-data-table">
+        <tr>
+            <td><label for="game_date">Game Date:</label></td>
+            <td><input type="date" id="game_date" name="game_date" value="<?php echo esc_attr($date); ?>"></td>
+        </tr>
+        <tr>
+            <td><label for="game_title">Game Title:</label></td>
+            <td><input type="text" id="game_title" name="game_title" value="<?php echo esc_attr($title); ?>"></td>
+        </tr>
+		<tr>
+            <td><label for="venue">Venue:</label></td>
+            <td><input type="text" id="venue" name="venue" value="<?php echo esc_attr($venue); ?>"></td>
+        </tr>
+		<tr>
+            <td><label for="location">Location:</label></td>
+            <td><input type="text" id="location" name="location" value="<?php echo esc_attr($location); ?>"></td>
+        </tr>
+    </table>
+	<hr />
+	<h3>
+		Visitor
+	</h3>
+	<table class="custom-data-table">
+		<tr>
+            <td><label for="location">Visitor Full Name:</label></td>
+            <td><input type="text" id="team_1_fullname" name="team_1_fullname" value="<?php echo esc_attr($team1fullname); ?>"></td>
+			<td><em>Example:</em> Example City Roller Derby Stingers <em>or</em> Example City Roller Derby</td>
+        </tr>
+		<tr>
+            <td><label for="location">Visitor Name 1 (Location or City) *optional:</label></td>
+            <td><input type="text" id="team_1" name="team_1" value="<?php echo esc_attr($team1); ?>"></td>
+			<td><em>Example:</em> Example City <em>or</em> Example City Roller Derby</td>
+        </tr>
+		<tr>
+            <td><label for="location">Visitor Name 2 (Mascot or Sub Team Name) *optional:</label></td>
+            <td><input type="text" id="team_1_name2" name="team_1_name2" value="<?php echo esc_attr($team1name2); ?>"></td>
+			<td><em>Example:</em> Roller Derby <em>or</em> Stingers</td>
+        </tr>
+		<tr>
+            <td><label for="location">Visitor Score:</label></td>
+            <td><input type="text" id="score_1" name="score_1" value="<?php echo esc_attr($score1); ?>"></td>
+        </tr>
+	</table>
+	<hr />
+	<h3>
+		Home
+	</h3>
+	<table class="custom-data-table">
+		<tr>
+            <td><label for="location">Home Full Name:</label></td>
+            <td><input type="text" id="team_2_fullname" name="team_2_fullname" value="<?php echo esc_attr($team2fullname); ?>"></td>
+			<td><em>Example:</em> Example City Roller Derby Stingers <em>or</em> Example City Roller Derby</td>
+        </tr>
+		<tr>
+            <td><label for="location">Home Name 1 (Location or City) *optional:</label></td>
+            <td><input type="text" id="team_2" name="team_2" value="<?php echo esc_attr($team2); ?>"></td>
+			<td><em>Example:</em> Example City <em>or</em> Example City Roller Derby</td>
+        </tr>
+		<tr>
+            <td><label for="location">Home Name 2 (Mascot or Sub Team Name) *optional:</label></td>
+            <td><input type="text" id="team_2_name2" name="team_2_name2" value="<?php echo esc_attr($team2name2); ?>"></td>
+			<td><em>Example:</em> Roller Derby <em>or</em> Stingers</td>
+        </tr>
+		<tr>
+            <td><label for="location">Home Score:</label></td>
+            <td><input type="text" id="score_2" name="score_2" value="<?php echo esc_attr($score2); ?>"></td>
+        </tr>
+	</table>
+    <?php
 }
 
 // Save custom fields data
@@ -125,7 +170,10 @@ function tm_derby_scoreboard_save_custom_fields( $post_id ) {
     if ( isset( $_POST['location'] ) ) {
         update_post_meta( $post_id, 'location', sanitize_text_field( $_POST['location'] ) );
     }
-    if ( isset( $_POST['team_1'] ) ) {
+    if ( isset( $_POST['team_1_fullname'] ) ) {
+        update_post_meta( $post_id, 'team_1_fullname', sanitize_text_field( $_POST['team_1_fullname'] ) );
+    }
+	if ( isset( $_POST['team_1'] ) ) {
         update_post_meta( $post_id, 'team_1', sanitize_text_field( $_POST['team_1'] ) );
     }
     if ( isset( $_POST['team_1_name2'] ) ) {
@@ -133,6 +181,9 @@ function tm_derby_scoreboard_save_custom_fields( $post_id ) {
     }
     if ( isset( $_POST['score_1'] ) ) {
         update_post_meta( $post_id, 'score_1', sanitize_text_field( $_POST['score_1'] ) );
+    }
+	if ( isset( $_POST['team_2_fullname'] ) ) {
+        update_post_meta( $post_id, 'team_2_fullname', sanitize_text_field( $_POST['team_2_fullname'] ) );
     }
     if ( isset( $_POST['team_2'] ) ) {
         update_post_meta( $post_id, 'team_2', sanitize_text_field( $_POST['team_2'] ) );
@@ -216,10 +267,20 @@ function tm_derby_scoreboard_shortcode( $atts ) {
             $location = get_post_meta( get_the_ID(), 'location', true );
             $team1 = get_post_meta( get_the_ID(), 'team_1', true );
             $team1name2 = get_post_meta( get_the_ID(), 'team_1_name2', true );
+            $team1fullname = get_post_meta( get_the_ID(), 'team_1_fullname', true ); // New line added
             $score1 = get_post_meta( get_the_ID(), 'score_1', true );
             $team2 = get_post_meta( get_the_ID(), 'team_2', true );
             $team2name2 = get_post_meta( get_the_ID(), 'team_2_name2', true );
+            $team2fullname = get_post_meta( get_the_ID(), 'team_2_fullname', true ); // New line added
             $score2 = get_post_meta( get_the_ID(), 'score_2', true );
+
+            // Check if Team1 and Team1name2 are empty, if so, use team1fullname
+            if (empty($team1) && empty($team1name2)) {
+                $team1name2 = $team1fullname;
+            }
+			if (empty($team2) && empty($team2name2)) {
+                $team2name2 = $team2fullname;
+            }
 
             if ($layout === 'grid') {
                 $output .= '<div class="tm-derby-scoreboard-grid-container">';
@@ -295,15 +356,17 @@ function tm_derby_export_xml() {
                 $title = get_post_meta( get_the_ID(), 'game_title', true );
                 $venue = get_post_meta( get_the_ID(), 'venue', true );
                 $location = get_post_meta( get_the_ID(), 'location', true );
-                $team1 = get_post_meta( get_the_ID(), 'team_1', true );
+                $team1fullname = get_post_meta( get_the_ID(), 'team_1_fullname', true );
+				$team1 = get_post_meta( get_the_ID(), 'team_1', true );
                 $team1name2 = get_post_meta( get_the_ID(), 'team_1_name2', true );
                 $score1 = get_post_meta( get_the_ID(), 'score_1', true );
+                $team2fullname = get_post_meta( get_the_ID(), 'team_2_fullname', true );
                 $team2 = get_post_meta( get_the_ID(), 'team_2', true );
                 $team2name2 = get_post_meta( get_the_ID(), 'team_2_name2', true );
                 $score2 = get_post_meta( get_the_ID(), 'score_2', true );
 
                 // Check if any of the values are empty
-                if ( empty( $team1 ) || empty( $score1 ) || empty( $team2 ) || empty( $score2 ) ) {
+                if ( empty( $score1 ) || empty( $score2 ) ) {
                     continue; // Skip this post if any value is empty
                 }
 
@@ -317,9 +380,11 @@ function tm_derby_export_xml() {
                 $xml->writeElement('game_title', $title);
                 $xml->writeElement('venue', $venue); 
                 $xml->writeElement('location', $location); 
+                $xml->writeElement('team_1_fullname', $team1fullname); 
                 $xml->writeElement('team_1', $team1);            
                 $xml->writeElement('team_1_name2', $team1name2);
                 $xml->writeElement('score_1', $score1);
+				$xml->writeElement('team_2_fullname', $team2fullname); 
                 $xml->writeElement('team_2', $team2);
                 $xml->writeElement('team_2_name2', $team2name2);
                 $xml->writeElement('score_2', $score2);
