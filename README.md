@@ -29,7 +29,7 @@ To effectively use the "TM Derby Scoreboard" plugin, follow these step-by-step i
    - After the installation is complete, activate the plugin from the Plugins page in your WordPress admin dashboard.
 
 2. Adding Game Scores:
-   - In the WordPress admin dashboard, you'll find a new menu item called "Game Scores." Click on it to add new game scores.
+   - In the WordPress admin dashboard, you'll find a new menu item called "TM Derby Scoreboard." Click on it to add new game scores.
    - Click on "Add New" to create a new game score entry. Fill in the required fields such as the date of the game, venue, location, team names, and their respective scores.
 
 4. Displaying Game Scores:
