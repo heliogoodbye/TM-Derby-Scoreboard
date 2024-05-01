@@ -19,6 +19,8 @@ TM Derby Scoreboard provides an efficient solution for roller derby enthusiasts,
 
 ### How to use TM Derby Scoreboard
 
+**NOTE:** This plugin requires PHP version 5.6 or higher (PHP 7.x or PHP 8.x recommended for better performance and security).
+
 To effectively use the "TM Derby Scoreboard" plugin, follow these step-by-step instructions:
 
 1. Installation:
