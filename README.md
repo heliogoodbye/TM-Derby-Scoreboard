@@ -31,8 +31,8 @@ To effectively use the "TM Derby Scoreboard" plugin, follow these step-by-step i
 2. Adding Game Scores:
    - In the WordPress admin dashboard, you'll find a new menu item called "TM Derby Scoreboard." Click on it to add new game scores.
    - Click on "Add New" to create a new game score entry. Fill in the required fields such as the date of the game, venue, location, team names, and their respective scores.
-   - If Visitor Name 1/2 and/or Home Name 1/2 are filled out, the plugin will produce a fancy two-line text result.
-   - If Visitor Name 1/2 and/or Home Name 1/2 aren't filled out, the plugin will produce a single-line text result.
+   - If Visitor Name 1/2 and/or Home Name 1/2 are filled in, the plugin will produce a fancy two-line text result.
+   - If Visitor Name 1/2 and/or Home Name 1/2 aren't filled in, the plugin will produce a single-line text result.
 
 ![tm-derby-team-1](https://github.com/heliogoodbye/TM-Derby-Scoreboard/assets/105381685/d6a82658-c2c2-46ef-8cc2-d8ee62f1c0c9)
 ![tm-derby-team-2](https://github.com/heliogoodbye/TM-Derby-Scoreboard/assets/105381685/d3b8f7a1-8c0b-4a3b-bcbd-2e8d2d93b0a5)
