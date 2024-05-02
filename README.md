@@ -34,9 +34,6 @@ To effectively use the "TM Derby Scoreboard" plugin, follow these step-by-step i
    - If Visitor Name 1/2 and/or Home Name 1/2 are filled in, the plugin will produce a fancy two-line text result.
    - If Visitor Name 1/2 and/or Home Name 1/2 aren't filled in, the plugin will produce a single-line text result.
 
-![tm-derby-team-1](https://github.com/heliogoodbye/TM-Derby-Scoreboard/assets/105381685/d6a82658-c2c2-46ef-8cc2-d8ee62f1c0c9)
-![tm-derby-team-2](https://github.com/heliogoodbye/TM-Derby-Scoreboard/assets/105381685/d3b8f7a1-8c0b-4a3b-bcbd-2e8d2d93b0a5)
-
 4. Displaying Game Scores:
    - To display game scores on any page or post, use the `[derby_scores]` shortcode. You can place this shortcode in the WordPress editor of the desired page or post.
    - Shortcode Attributes:
